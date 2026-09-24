@@ -2057,18 +2057,11 @@ document
         "click",
         () => {
 
-            if (
-                cart.length ===
-                0
-            ) {
-
-                alert(
-                    "Your cart is empty."
-                );
-
-                return;
-            }
-
+            if (cart.length === 0) {
+    updateCartUI();
+    openCart();
+    return;
+}
 
             let message =
                 "Hi IT Girl Editions! 👋\n\n" +
